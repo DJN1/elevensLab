@@ -9,5 +9,13 @@ public class CardTester {
 	 */
 	public static void main(String[] args) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		Card DiaAce = new Card("Ace", "Diamonds", 11);
+		Card HeaKing = new Card("King", "Hearts", 10);
+		Card SpaEight = new Card("Eight", "Spades", 8);
+		DiaAce.pointValue();
+		HeaKing.rank();
+		SpaEight.suit();
+		HeaKing.matches(SpaEight);
+		System.out.println(HeaKing);
 	}
 }

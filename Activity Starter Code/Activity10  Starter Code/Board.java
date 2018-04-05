@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * of solitaire games similar to Elevens.  The variants differ in
  * card removal and the board size.
  */
-public abstract class Board {
+public abstract class Board10 {
 
 	/**
 	 * The cards on this board.
