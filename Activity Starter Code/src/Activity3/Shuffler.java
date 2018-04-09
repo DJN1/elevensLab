@@ -1,3 +1,4 @@
+package Activity3;
 /**
  * This class provides a convenient way to test shuffling methods.
  */
@@ -51,6 +52,23 @@ public class Shuffler {
 	 */
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		int[] temp = new int[values.length];
+		int mid = values.length / 2;
+		int unshuffled = 0;
+		int k = 0;
+		for(; k < mid; k++) {
+		    temp[unshuffled] = values[k];
+		    unshuffled += 2;
+        }
+        k = 1;
+        for(; k < values.length; k++) {
+            temp[unshuffled] = values[k];
+            unshuffled += 2;
+        }
+        for(int j = 0; j < values.length; j++) {
+            values[j] = temp[j];
+        }
+
 	}
 
 	/**
@@ -66,5 +84,11 @@ public class Shuffler {
 	 */
 	public static void selectionShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		for(int k = values.length - 1; k > 0; k--) {
+		    int pos = (int) (Math.random() * (k + 1));
+		    int temp = values[pos];
+		    values[temp] = values[k];
+		    values[k] = temp;
+        }
 	}
 }
