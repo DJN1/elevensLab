@@ -2,7 +2,7 @@ package Activity4;
 /**
  * This is a class that tests the Deck class.
  */
-public class DeckTester {
+public class DeckTester4 {
 
 	/**
 	 * The main method in this class checks the Deck operations for consistency.
@@ -51,6 +51,12 @@ public class DeckTester {
 		System.out.println("  deal: " + d.deal());
 		System.out.println();
 		System.out.println();
+
+
+		Deck test = new Deck(ranks, suits, pointValues);
+		System.out.println(test);
+		test.shuffle();
+		System.out.println(test);
 
 		/* *** TO BE COMPLETED IN ACTIVITY 4 *** */
 	}

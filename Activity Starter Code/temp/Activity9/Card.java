@@ -1,5 +1,6 @@
+package Activity9;
 /**
- * Card.java
+ * Card1.java
  *
  * <code>Card</code> represents a playing card.
  */
