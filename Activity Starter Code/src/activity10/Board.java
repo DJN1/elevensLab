@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * of solitaire games similar to Elevens.  The variants differ in
  * card removal and the board size.
  */
-public abstract class Board10 {
+public abstract class Board {
 
 	/**
 	 * The cards on this board.
@@ -32,7 +32,7 @@ public abstract class Board10 {
 	 * @param pointValues the integer values of the cards needed to create
 	 *                    the deck
 	 */
-	public Board10(int size, String[] ranks, String[] suits, int[] pointValues) {
+	public Board(int size, String[] ranks, String[] suits, int[] pointValues) {
 		cards = new Card[size];
 		deck = new Deck(ranks, suits, pointValues);
 		if (I_AM_DEBUGGING) {
