@@ -46,3 +46,6 @@ Questions:
 * 9.1- Because the size depends on the length of the cards, not the method.
 * 9.2- Because it doesnt change as the game changes, the method is the same.
 * 9.3- Yes, polymorphism
+* 11.1- For 100: ~10%, not consistent
+* 11.2- ~15%, fairly consistent
+* 11.3- 10000

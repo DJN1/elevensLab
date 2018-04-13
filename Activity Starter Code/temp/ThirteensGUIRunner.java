@@ -1,4 +1,7 @@
-package Activity11;
+package Activity13;
+
+import Activity11.Board;
+import Activity11.CardGameGUI;
 
 /**
  * This is a class that plays the GUI version of the Thirteens game.

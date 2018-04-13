@@ -1,4 +1,6 @@
-package Activity11;
+package Activity13;
+
+import Activity11.Board;
 
 import java.util.List;
 
@@ -68,7 +70,7 @@ public class ThirteensBoard extends Board {
 	public List<Integer> anotherPlayIsPossible() {
 		/* *** TO BE MODIFIED IN ACTIVITY 11 *** */
 		List<Integer> cIndexes = cardIndexes();
-		return containsPairSum13(cIndexes) || containsKing(cIndexes);
+		return containsPairSum13(cIndexes)  > 0|| containsKing(cIndexes) > 0;
 	}
 
 	/**
