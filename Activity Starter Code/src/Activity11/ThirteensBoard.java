@@ -1,7 +1,6 @@
 package Activity11;
 
 import java.util.List;
-import java.util.ArrayList;
 
 /**
  * The ThirteensBoard class represents the board in a game of Thirteens.
@@ -66,7 +65,7 @@ public class ThirteensBoard extends Board {
 	 *         false otherwise.
 	 */
 	@Override
-	public boolean anotherPlayIsPossible() {
+	public List<Integer> anotherPlayIsPossible() {
 		/* *** TO BE MODIFIED IN ACTIVITY 11 *** */
 		List<Integer> cIndexes = cardIndexes();
 		return containsPairSum13(cIndexes) || containsKing(cIndexes);

@@ -173,7 +173,7 @@ public abstract class Board {
 	 * @return true if there is a legal play left on the board;
 	 *         false otherwise.
 	 */
-	public abstract boolean anotherPlayIsPossible();
+	public abstract List<Integer> anotherPlayIsPossible();
 
 	/**
 	 * Deal cards to this board to start the game.
